@@ -1,0 +1,12 @@
+alias ll='ls -alh'
+alias ..='cd ..'
+alias jsc="/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Resources/jsc"
+export PS1="Peggy \[\e[1;36m\]\T\[\e[m\] [\[\e[0;32m\] \w \[\e[m\]] : "
+export PATH=/usr/local/bin:$PATH:~/android/tools:~/android/platform-tools:/Users/200011/pear/bin:.
+export EDITOR=vim
+shopt -s checkwinsize
+function server() {
+	local port="${1:-8000}"
+	open "http://localhost:${port}/"
+	python SimpleHTTPServer "$port"
+}

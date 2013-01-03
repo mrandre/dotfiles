@@ -1,0 +1,54 @@
+colorscheme wombat
+set go-=T
+set lines=80
+set columns=140
+set wildmenu
+set wildmode=list:longest
+set title
+set ignorecase
+set smartcase
+set number
+set gfn=Inconsolata:h12.00
+set hlsearch
+set autoindent
+set laststatus=2
+set incsearch
+set hidden
+set history=1000
+set scrolloff=3
+set visualbell
+set gtl=%t gtt=%F
+set tabstop=4
+set shiftwidth=4
+
+runtime macros/matchit.vim
+
+syntax on
+filetype on
+filetype plugin on
+filetype indent on
+
+inoremap          (   ()<LEFT>
+inoremap <silent> )   )<ESC>
+                      \:let tmp0=&clipboard <BAR>
+                      \let &clipboard=''<BAR>
+                      \let tmp1=@"<BAR>
+                      \let tmp2=@0<CR>
+                      \y2l
+                      \:if '))'=="<C-R>=escape(@0,'"\')<CR>"<BAR>
+                      \  exec 'normal "_x'<BAR>
+                      \endif<BAR>
+                      \let @"=tmp1<BAR>
+                      \let @0=tmp2<BAR>
+                      \let &clipboard=tmp0<BAR>
+                      \unlet tmp0<BAR>
+                      \unlet tmp1<BAR>
+                      \unlet tmp2<CR>
+                      \a
+
+inoremap {      {}<Left>
+inoremap {<CR>  {<CR>}<Esc>O
+inoremap {{     {
+inoremap {}     {}
+filetype plugin indent on
+
