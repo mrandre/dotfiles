@@ -1,0 +1,21 @@
+# ~/.tmuxinator/skimmer.yml
+# you can make as many tabs as you wish...
+
+project_name: skimmer
+project_root: ~/Code/sandbox/
+tabs:
+  - skimmer:
+      layout: 85b1,272x66,0,0{191x66,0,0,80x66,192,0[80x16,192,0,80x16,192,17,80x16,192,34,80x15,192,51]}
+      panes:
+        - cd skimmer/code; vim
+        - cd skimmer/code; coffee -b -w -o compiled/ src/
+        - cd skimmer/code; stylus -w src/css --out compiled/css
+        - cd solo/code; coffee -b -w -o compiled/ src/
+        - # Blank shell.
+  - mucking:
+      panes:
+        - #Blank shell!
+  - Global Seearch:
+      panes:
+        - ssh mrandre@10.51.102.2
+select_pane: 1
