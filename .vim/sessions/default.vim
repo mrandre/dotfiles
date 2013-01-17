@@ -1,5 +1,5 @@
-" ~/.vim/sessions/default.vim: Vim session script.
-" Created by session.vim 1.5 on 03 January 2013 at 13:30:58.
+" ~/Code/dotfiles/.vim/sessions/default.vim: Vim session script.
+" Created by session.vim 1.5 on 16 January 2013 at 19:30:50.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=
@@ -23,16 +23,10 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +1 ~/Code/webapps/skimmer/trunk/code/3.0/index.php
-badd +1 ~/Code/webapps/skimmer/trunk/code/3.0/src/modules/search/search.controller.coffee
-badd +12 ~/Code/webapps/skimmer/trunk/code/3.0/src/modules/readinglist/readinglist.controller.coffee
-badd +17 ~/Code/webapps/skimmer/trunk/code/3.0/src/modules/socket/socket.controller.coffee
-badd +122 ~/Code/webapps/skimmer/trunk/code/3.0/src/modules/section/section-loader.controller.coffee
 badd +1 index.php
-badd +1 src/modules/socket/socket.controller.coffee
 badd +0 src/modules/section/section-loader.controller.coffee
-args ~/Code/webapps/skimmer/trunk/code/3.0/index.php
-set lines=66 columns=162
+args index.php
+set lines=43 columns=122
 edit index.php
 set splitbelow splitright
 set nosplitbelow
@@ -49,51 +43,7 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 1 - ((0 * winheight(0) + 32) / 64)
-if s:l < 1 | let s:l = 1 | endif
-exe s:l
-normal! zt
-1
-normal! 0
-tabedit src/modules/socket/socket.controller.coffee
-set splitbelow splitright
-set nosplitbelow
-set nosplitright
-wincmd t
-set winheight=1 winwidth=1
-argglobal
-setlocal fdm=manual
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=0
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-silent! normal! zE
-let s:l = 1 - ((0 * winheight(0) + 31) / 63)
-if s:l < 1 | let s:l = 1 | endif
-exe s:l
-normal! zt
-1
-normal! 0
-tabedit src/modules/socket/socket.controller.coffee
-set splitbelow splitright
-set nosplitbelow
-set nosplitright
-wincmd t
-set winheight=1 winwidth=1
-argglobal
-setlocal fdm=manual
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=0
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-silent! normal! zE
-let s:l = 1 - ((0 * winheight(0) + 31) / 63)
+let s:l = 1 - ((0 * winheight(0) + 20) / 41)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -115,13 +65,13 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 1 - ((0 * winheight(0) + 31) / 63)
+let s:l = 1 - ((0 * winheight(0) + 20) / 40)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
 1
 normal! 0
-tabnext 4
+tabnext 2
 if exists('s:wipebuf')
   silent exe 'bwipe ' . s:wipebuf
 endif
@@ -134,7 +84,7 @@ endif
 let &so = s:so_save | let &siso = s:siso_save
 doautoall SessionLoadPost
 unlet SessionLoad
-tabnext 4
+tabnext 2
 1wincmd w
 
 " vim: ft=vim ro nowrap smc=128
