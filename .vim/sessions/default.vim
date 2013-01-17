@@ -1,5 +1,5 @@
 " ~/Code/dotfiles/.vim/sessions/default.vim: Vim session script.
-" Created by session.vim 1.5 on 16 January 2013 at 19:30:50.
+" Created by session.vim 1.5 on 16 January 2013 at 19:24:48.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=
@@ -18,15 +18,14 @@ if &cp | set nocp | endif
 let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
 let v:this_session=expand("<sfile>:p")
 silent only
-cd ~/Code/sandbox/skimmer/code/3.0
+cd ~/Code/sandbox/skimmer/code
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +1 index.php
-badd +0 src/modules/section/section-loader.controller.coffee
+badd +0 index.php
 args index.php
-set lines=43 columns=122
+set lines=66 columns=191
 edit index.php
 set splitbelow splitright
 set nosplitbelow
@@ -49,29 +48,7 @@ exe s:l
 normal! zt
 1
 normal! 0
-tabedit src/modules/section/section-loader.controller.coffee
-set splitbelow splitright
-set nosplitbelow
-set nosplitright
-wincmd t
-set winheight=1 winwidth=1
-argglobal
-setlocal fdm=manual
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=0
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-silent! normal! zE
-let s:l = 1 - ((0 * winheight(0) + 20) / 40)
-if s:l < 1 | let s:l = 1 | endif
-exe s:l
-normal! zt
-1
-normal! 0
-tabnext 2
+tabnext 1
 if exists('s:wipebuf')
   silent exe 'bwipe ' . s:wipebuf
 endif
@@ -84,7 +61,7 @@ endif
 let &so = s:so_save | let &siso = s:siso_save
 doautoall SessionLoadPost
 unlet SessionLoad
-tabnext 2
+tabnext 1
 1wincmd w
 
 " vim: ft=vim ro nowrap smc=128

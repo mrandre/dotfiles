@@ -19,6 +19,7 @@ set visualbell
 set gtl=%t gtt=%t
 set tabstop=4
 set shiftwidth=4
+set mouse=a
 
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
