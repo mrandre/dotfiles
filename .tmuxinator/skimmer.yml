@@ -13,7 +13,7 @@ tabs:
         - cd solo/code; coffee -b -w -o compiled/ src/
         - # Blank shell.
   - Skimmer Node:
-      layout: 6829,272x66,0,0{195x66,0,0[195x33,0,0,195x32,0,34],76x66,196,0[76x10,196,0,76x32,196,11,76x22,196,44]}]
+      layout: 6829,272x66,0,0{195x66,0,0[195x33,0,0,195x32,0,34],76x66,196,0[76x10,196,0,76x32,196,11,76x22,196,44]}
       panes:
         - cd skimmer/code; vim server.coffee
         - cd skimmer/code; vim index.php
