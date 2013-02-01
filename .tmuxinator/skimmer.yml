@@ -2,28 +2,24 @@
 # you can make as many tabs as you wish...
 
 project_name: skimmer
-project_root: ~/Code/sandbox/
+project_root: ~/Code/sandbox/skimmer/code
 tabs:
-  - skimmer:
-      layout: 85b1,272x66,0,0{191x66,0,0,80x66,192,0[80x16,192,0,80x16,192,17,80x16,192,34,80x15,192,51]}
+  - Skimmer Frontend:
+      layout: main-vertical
       panes:
-        - cd skimmer/code; vim
-        - cd skimmer/code; coffee -b -w -o compiled/ src/
-        - cd skimmer/code; stylus -w src/css --out compiled/css
-        - cd solo/code; coffee -b -w -o compiled/ src/
+        - vim
+        - cd coffee -b -w -o app/public/js/ frontend/coffee/
+        - stylus -w frontend/stylus --out app/public/css
+        - cd ../../solo/code; coffee -b -w -o compiled/ src/
         - # Blank shell.
   - Skimmer Node:
-      layout: 6829,272x66,0,0{195x66,0,0[195x33,0,0,195x32,0,34],76x66,196,0[76x10,196,0,76x32,196,11,76x22,196,44]}
+      layout: main-vertical
       panes:
-        - cd skimmer/code; vim server.coffee
-        - cd skimmer/code; vim index.php
-        - cd skimmer/code; coffee --compile --watch server.coffee
-        - cd skimmer/code; nodemon server.js
+        - vim app/server.coffee
+        - coffee --compile --watch app/*.coffee app/**/*.coffee
+        - cd app; nodemon server.js
         - #blank shell.
   - mucking:
       panes:
         - #Blank shell!
-  - Global Seearch:
-      panes:
-        - ssh mrandre@10.51.102.2
 select_pane: 1
