@@ -23,7 +23,7 @@ set mouse=a
 
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
-set wildignore=app/public/**,app/build/**,app/**/*.js
+set wildignore=app/public/**,app/build/**,app/**/*.js,node_modules/**/*
 
 syntax on
 filetype on
