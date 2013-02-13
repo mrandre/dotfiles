@@ -8,7 +8,7 @@ tabs:
       layout: main-vertical
       panes:
         - vim
-        - cd coffee -b -w -o app/public/js/ frontend/coffee/
+        - coffee -b -w -o app/public/js/ frontend/coffee/
         - stylus -w frontend/stylus --out app/public/css
         - cd ../../solo/code; coffee -b -w -o compiled/ src/
         - # Blank shell.
