@@ -10,7 +10,7 @@ tabs:
         - vim
         - coffee -b -w -o app/public/js/ frontend/coffee/
         - stylus -w frontend/stylus --out app/public/css
-        - cd ../../solo/code; coffee -b -w -o compiled/ src/
+        - coffee -b -w -o app/public/solo solo/code/src
         - # Blank shell.
   - Skimmer Node:
       layout: main-vertical
