@@ -19,7 +19,7 @@ tabs:
         - ./app/node_modules/coffee-script/bin/coffee --compile --watch app/*.coffee app/**/*.coffee
         - cd app; nodemon server.js
         - #blank shell.
-  - mucking:
+  - Deploy:
       panes:
-        - #Blank shell!
+        - cd app
 select_pane: 1
