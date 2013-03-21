@@ -1,0 +1,15 @@
+# ~/.tmuxinator/bobafett.yml
+# you can make as many tabs as you wish...
+
+project_name: Boba Fett
+project_root: ~/code/
+tabs:
+  - editor:
+      layout: main-vertical
+      panes:
+        - vim
+        - #empty, will just run plain bash
+        - top
+  - server: #rails s
+  - logs: #tail -f logs/development.log
+  - console: #

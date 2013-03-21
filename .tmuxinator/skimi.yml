@@ -1,0 +1,16 @@
+# ~/.tmuxinator/skimi.yml
+# you can make as many tabs as you wish...
+
+project_name: Skimi
+project_root: ~/Code/skimi
+tabs:
+  - code:
+      layout: main-vertical
+      panes:
+        - vim app/server.coffee
+        - grunt watch
+        - cd app; nodemon server.js
+        - 
+  - shell:
+  - logs: #
+  - deploy: cd app
