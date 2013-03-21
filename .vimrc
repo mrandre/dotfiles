@@ -62,6 +62,8 @@ function! ShortTabLine()
 		let filename = substitute(filename, "\.coffee", "", "")
 		let filename = substitute(filename, "\.controller", "\.ct", "")
 		let filename = substitute(filename, "\.view", "\.vw", "")
+		let filename = substitute(filename, "\.template.html", "\.tmp", "")
+		let filename = substitute(filename, "\.markup.html", "\.mrk", "")
 		" only show the first 6 letters of the name and
 		" .. if the filename is more than 8 letters long
 		if strlen(filename) >= 18
