@@ -4,21 +4,18 @@
 project_name: skimmer
 project_root: ~/Code/skimmer/code
 tabs:
-  - Skimmer Frontend:
+  - Edit:
       layout: main-vertical
       panes:
         - vim
-        - mkdir -p app/public/tmp/js; ./app/node_modules/coffee-script/bin/coffee -b -w -o app/public/tmp/js frontend/coffee
-        - mkdir -p app/public/tmp/css; ./app/node_modules/stylus/bin/stylus -w frontend/stylus --out app/public/tmp/css
-        - mkdir -p app/public/tmp/solo; ./app/node_modules/coffee-script/bin/coffee -b -w -o app/public/tmp/solo solo/code/src
+        - grunt init
+        - grunt server:development
         - # Blank shell.
-  - Skimmer Node:
-      layout: main-vertical
-      panes:
-        - vim app/server.coffee
-        - ./app/node_modules/coffee-script/bin/coffee --compile --watch app/*.coffee app/**/*.coffee
-        - cd app; nodemon server.js
-        - #blank shell.
+  - Grunt:
+        layout: even-horizontal
+        panes:
+            - vim Gruntfile.coffee
+            - # A place to run Grunt commands
   - Deploy:
       panes:
         - cd app
