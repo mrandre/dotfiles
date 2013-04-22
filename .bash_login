@@ -4,12 +4,10 @@ alias jsc="/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Resour
 export PS1="\h \[\e[1;36m\]\T\[\e[m\] [\[\e[0;32m\] \w \[\e[m\]] : "
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH:~/android/tools:~/android/platform-tools:/usr/local/share/npm/bin:/Users/200011/pear/bin:.
 export EDITOR=vim
+export NODE_ENV=development
 shopt -s checkwinsize
-function server() {
-	local port="${1:-8000}"
-	open "http://localhost:${port}/"
-	python SimpleHTTPServer "$port"
-}
+
+
 
 # {{{
 # Node Completion - Auto-generated, do not touch.
