@@ -33,7 +33,6 @@ filetype plugin on
 filetype indent on
 
 let mapleader = ","
-map <silent> <leader>n :NERDTreeTabsToggle<CR>
 let g:nerdtree_tabs_open_on_console_startup=0
 let g:CommandTMatchWindowAtTop=1
 let g:CommandTAcceptSelectionMap = ['<C-b>']
@@ -42,6 +41,14 @@ let g:session_autosave='yes'
 let g:session_autoload='yes'
 let g:session_default_to_last=1
 let g:miniBufExplVSplit = 20
+
+fun! ReloadTabs()
+	set noconfirm
+	bufdo e!
+	set confirm
+endfun
+
+nmap <leader>r call ReloadTabs()
 
 :set tabline=%!ShortTabLine()
 
