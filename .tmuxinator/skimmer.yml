@@ -2,7 +2,7 @@
 # you can make as many tabs as you wish...
 
 project_name: skimmer
-project_root: ~/Code/skimmer/code
+project_root: ~/Code/skimmer
 tabs:
   - Edit:
       layout: main-vertical
@@ -11,12 +11,4 @@ tabs:
         - grunt init
         - grunt server:development
         - # Blank shell.
-  - Grunt:
-        layout: even-horizontal
-        panes:
-            - vim Gruntfile.coffee
-            - # A place to run Grunt commands
-  - Deploy:
-      panes:
-        - cd app
 select_pane: 1

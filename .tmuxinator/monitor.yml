@@ -1,0 +1,13 @@
+# ~/.tmuxinator/monitor.yml
+# you can make as many tabs as you wish...
+
+project_name: Skimmer Monitor
+project_root: ~/Code/skimmer
+tabs:
+  - editor:
+      layout: even-vertical
+      panes:
+        - grunt init
+        - grunt server:dev
+        - # Blank
+select_pane: 3
