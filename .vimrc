@@ -27,7 +27,7 @@ set clipboard=unnamed
 
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
-set wildignore=app/public/*,app/build/**,public/**/*.js,*/node_modules/**/*,solo/**/*.js
+set wildignore=*app/**/*.js,*app/**/*.coffee,*.map,app/build/**,*public/**/*.js,*/node_modules/**/*,solo/**/*.js
 
 syntax on
 filetype on
@@ -35,10 +35,6 @@ filetype plugin on
 filetype indent on
 
 let mapleader = ","
-let g:nerdtree_tabs_open_on_console_startup=0
-let g:CommandTMatchWindowAtTop=1
-let g:CommandTAcceptSelectionMap = ['<C-b>']
-let g:CommandTAcceptSelectionTabMap = ['<CR>']
 let g:ctrlp_open_new_file='t'
 let g:ctrlp_match_window_bottom=0
 let g:ctrlp_match_window_reversed=0
