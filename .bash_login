@@ -2,7 +2,7 @@ alias ll='ls -alh'
 alias ..='cd ..'
 alias jsc="/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Resources/jsc"
 export PS1="\h \[\e[1;36m\]\T\[\e[m\] [\[\e[0;32m\] \w \[\e[m\]] : "
-export PATH=/usr/local/bin:/usr/local/sbin:$PATH:~/android/tools:~/android/platform-tools:/usr/local/share/npm/bin:/Users/200011/pear/bin:.
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH:~/android/tools:~/android/platform-tools:/usr/local/share/npm/bin:/Users/200011/pear/bin:~/bin:.
 export EDITOR=vim
 export NODE_ENV=development
 shopt -s checkwinsize
