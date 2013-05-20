@@ -20,6 +20,8 @@ set gtl=%t gtt=%t
 set tabstop=4
 set shiftwidth=4
 set mouse=a
+set noexpandtab
+
 
 set clipboard=unnamed
 
@@ -37,6 +39,13 @@ let g:nerdtree_tabs_open_on_console_startup=0
 let g:CommandTMatchWindowAtTop=1
 let g:CommandTAcceptSelectionMap = ['<C-b>']
 let g:CommandTAcceptSelectionTabMap = ['<CR>']
+let g:ctrlp_open_new_file='t'
+let g:ctrlp_match_window_bottom=0
+let g:ctrlp_match_window_reversed=0
+let g:ctrlp_prompt_mappings = {
+	\ 'AcceptSelection("e")': ['<c-t>'],
+	\ 'AcceptSelection("t")': ['<cr>', '2-LeftMouse>']
+\}
 let g:session_autosave='yes'
 let g:session_autoload='yes'
 let g:session_default_to_last=1
