@@ -27,7 +27,7 @@ set clipboard=unnamed
 
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
-set wildignore=*app/**/*.js,*app/**/*.coffee,*.map,app/build/**,*public/**/*.js,*/node_modules/**/*,solo/**/*.js
+set wildignore=*app/**/*.js,*app/**/*.css,*app/**/*.coffee,*.map,app/build/**,*public/**/*.js,*/node_modules/**/*,solo/**/*.js
 
 syntax on
 filetype on
