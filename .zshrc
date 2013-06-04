@@ -48,5 +48,13 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+alias tmux='tmux -2'
+alias ll='ls -alh'
+alias ..='cd ..'
+
+export DONE_ENV=development
+
+TERM=screen-256color
+
 # Customize to your needs...
 export PATH=$PATH:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/local/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/andre/android/tools:/home/andre/android/platform-tools:/usr/local/share/npm/bin:/Users/200011/pear/bin:/home/andre/bin:.:/home/andre/android/tools:/home/andre/android/platform-tools:/usr/local/share/npm/bin:/Users/200011/pear/bin:/home/andre/bin:.:/home/andre/android/tools:/home/andre/android/platform-tools:/usr/local/share/npm/bin:/Users/200011/pear/bin:/home/andre/bin:.:/home/andre/android/tools:/home/andre/android/platform-tools:/usr/local/share/npm/bin:/Users/200011/pear/bin:/home/andre/bin:.:/home/andre/android/tools:/home/andre/android/platform-tools:/usr/local/share/npm/bin:/Users/200011/pear/bin:/home/andre/bin:.:/home/andre/android/tools:/home/andre/android/platform-tools:/usr/local/share/npm/bin:/Users/200011/pear/bin:/home/andre/bin:.
