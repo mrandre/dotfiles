@@ -19,3 +19,6 @@
 [submodule ".vim/bundle/tomorrow-theme-vim"]
 	path = .vim/bundle/tomorrow-theme-vim
 	url = https://github.com/d11wtq/tomorrow-theme-vim.git
+[submodule ".vim/bundle/vim-airline"]
+	path = .vim/bundle/vim-airline
+	url = https://github.com/bling/vim-airline.git

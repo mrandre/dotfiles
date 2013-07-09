@@ -22,6 +22,7 @@ set shiftwidth=4
 set mouse=a
 set noexpandtab
 
+let g:airline_powerline_fonts=1
 
 set clipboard=unnamed
 
