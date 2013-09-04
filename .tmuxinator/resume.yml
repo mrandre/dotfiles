@@ -1,0 +1,12 @@
+# ~/.tmuxinator/skimmer.yml
+# you can make as many tabs as you wish...
+
+project_name: resume
+project_root: ~/Code/resume
+tabs:
+  - Edit:
+      layout: main-vertical
+      panes:
+        - vim index.html
+        - # Blank shell.
+select_pane: 1
