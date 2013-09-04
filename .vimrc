@@ -1,5 +1,6 @@
 call pathogen#infect()
 colorscheme wombat
+set encoding=utf-8
 set go-=T
 set wildmenu
 set wildmode=list:longest
@@ -7,7 +8,7 @@ set title
 set ignorecase
 set smartcase
 set number
-set gfn=Inconsolata:h12.00
+set gfn="Inconsolata for Powerline.otf"
 set hlsearch
 set autoindent
 set laststatus=2
