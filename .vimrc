@@ -30,6 +30,15 @@ set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set wildignore=*app/**/*.js,*app/**/*.css,*app/**/*.coffee,*.map,app/build/**,*public/**/*.js,*/node_modules/**/*,solo/**/*.js
 
+nmap j gj
+nmap k gk
+nmap $ g$
+nmap 0 g0
+vmap j gj
+vmap k gk
+vmap $ g$
+vmap 0 g0
+
 syntax on
 filetype on
 filetype plugin on
