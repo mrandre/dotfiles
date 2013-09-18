@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/Users/200011/Code/webapps/skimmer/trunk/2.0/resources/schemes/serendipity'
 let g:netrw_dirhist_2='/Users/200011/Code/webapps/skimmer/trunk/2.2/src/modules/slideshow'
 let g:netrw_dirhist_3='/Users/200011/Code/webapps/skimmer/trunk/dev/src/modules/readinglist'
@@ -8,3 +8,4 @@ let g:netrw_dirhist_5='/Users/andre/Code/dotfiles'
 let g:netrw_dirhist_6='/Users/andre/Code/sandbox/skimmer/.git/modules/code/solo'
 let g:netrw_dirhist_7='/Users/andre/Library/Application Support/Google/Chrome Canary/Default/User StyleSheets'
 let g:netrw_dirhist_8='/home/andre/Code/skimmer/app/resources/schemes/headlines/scripts.js'
+let g:netrw_dirhist_9='/home/andre/tmp'

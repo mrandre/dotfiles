@@ -1,0 +1,12 @@
+# ~/.tmuxinator/writing.yml
+# you can make as many tabs as you wish...
+
+project_name: Writing
+project_root: ~/Code/writings
+tabs:
+  - editor:
+      layout: main-vertical
+      panes:
+        - #empty
+        - #empty
+        - #empty
