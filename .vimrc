@@ -9,6 +9,7 @@ set ignorecase
 set smartcase
 set number
 set gfn="Inconsolata for Powerline.otf"
+set linebreak
 set hlsearch
 set autoindent
 set laststatus=2
@@ -47,6 +48,18 @@ let g:ctrlp_prompt_mappings = {
 let g:session_autosave='yes'
 let g:session_autoload='yes'
 let g:session_default_to_last=1
+
+
+vmap <A-j> gj
+vmap <A-k> gk
+vmap <A-4> g$
+vmap <A-6> g^
+vmap <A-0> g0
+nmap <A-j> gj
+nmap <A-k> gk
+nmap <A-4> g$
+nmap <A-6> g^
+nmap <A-0> g0
 
 fun! ReloadTabs()
 	set noconfirm
